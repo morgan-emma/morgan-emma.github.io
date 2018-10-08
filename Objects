@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	<script>
+    function Child(name, birthday) {
+	  this.name = name;
+	  this.birthday = birthday;
+    }
+    Child.prototype.age = 0;
+
+    function createChild() {
+	  var name = document.getElementById('name').value;
+	  var birthday = document.getElementById('birthday').value;
+	  var child1 = new Child(name, wins);
+	  var txt = child1.name + "'s birthday is " + child1.birthday; 
+	  document.getElementById('display').innerHTML = txt;
+    }
+  </script>
+  
+	<div>Child's name :
+	<form id="form1">
+		Child Name:<input id="name" type="text" name="child">
+		<br>
+		Birthday:<input id="wins" type="text" name="birthday">
+		<br>
+		</div>
+		<div>
+			<button onclick="createChild('name', 'birthday')" >Submit</button>
+		</div>
+	</form>
+	<div id="display"></div>
+</body>
+</html>
