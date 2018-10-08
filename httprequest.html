@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var myRequest = new XMLHttpRequest();
+
+myRequest.onreadystatechange = function() {
+    if (myRequest.readyState == 4) { 
+        if (myRequest.status == 200) {
+        console.log(myRequest.responseText); 
+        }
+        else { 
+        console.log('File not found'); 
+        }
+    }
+};
+myRequest.open("GET", 'request.txt', true);
+myRequest.send();
+
+</script>
+
+<div id="test" />
+
+</body> 
+</html> 
