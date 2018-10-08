@@ -12,7 +12,7 @@ myRequest.onreadystatechange = function() { // this function is called when the 
     if (myRequest.readyState == 4) { // readystate is the current state of the request - 4 means the request is completed
         if (myRequest.status == 200) { // status is the server response - 200 means request was successful 
         console.log(myRequest.responseText); // text will be logged in the console 
-        document.getElementById('display').innerHTML = "Open console: Tools -> Web Developer -> Web Console"; // change web page text 
+        // change web page text 
             document.getElementById('display').innerHTML = myRequest.reponseText; 
         }
         else { 
