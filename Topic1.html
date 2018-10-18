@@ -16,25 +16,20 @@ function primeTest(){
 var testNum = 1;
 while (testNum <= 100) 
 {
-  if (testNum == 1)
-  {
-    document.write("not" + testNum + "\n");
-  }
-  else if(testNum == 2)
-  {
-    document.write(testNum + "\n");
-  }
-  else
-  {
-    for(var x = 2; x < testNum; x++)
+ var x = 1;
+ var prime = true; 
+ while (x <= testNum)
     {
       if(testNum % x == 0)
       {
-        document.write("not" + testNum + "\n");
+       prime = false; 
       }
+     x++; 
     }
-    document.write(x + "\n");  
-  }
+ if (prime = true) 
+ {
+  document.write(testNum + "\n"); 
+ }
 }
 }
 </script>
