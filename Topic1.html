@@ -21,7 +21,7 @@ function primeTest(){
     prime = true; 
     while (x < testNum)
     {
-      if(testNum % x === 0)
+      if(testNum % (x-1) === 0)
       {
         prime = false; 
       }
