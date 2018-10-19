@@ -20,16 +20,15 @@ function primeTest(){
   {
     x = 1;
     prime = true; 
-    while (x < testNum)
-    {
-      if(testNum % (x-1) === 0)
-      {
-        prime = false; 
-      }
-      x++; 
+    
+    for(var x = 2; x < testNum; x++) {
+        if(value % x === 0) {
+            prime = false;
+        }
     }
+      x++; 
    console.log('tested ' + testNum + ' is ' + prime + '\n'); //test
-    if (prime === true) 
+    if (prime == true) 
     {
      console.log('test2'); //test
       document.write(testNum + "\n"); 
