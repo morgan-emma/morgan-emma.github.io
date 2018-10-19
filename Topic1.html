@@ -12,29 +12,26 @@
 primeTest(); 
  
 function primeTest(){ 
-  console.log('test2'); //test
   var testNum = 1;
   var x = 1; 
   var prime = true; 
   while (testNum <= 100) 
   {
-   console.log('test3'); //test
     x = 1;
     prime = true; 
     while (x <= testNum)
     {
-     console.log('test4'); //test
       if(testNum % x === 0)
       {
-       console.log('test5'); //test
         prime = false; 
       }
       x++; 
     }
-   console.log('test6'); //test
+   console.log('test1'); //test
     if (prime === true) 
     {
-      console.log(testNum + "\n"); 
+     console.log('test2'); //test
+      document.write(testNum + "\n"); 
     }
    testNum++; 
   }
