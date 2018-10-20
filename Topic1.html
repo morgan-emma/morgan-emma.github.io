@@ -14,8 +14,9 @@ primeTest();
 function primeTest(){ 
   var testNum = 3;
   var x = 1; 
+  var numOfPrimes = 0; 
   var prime = true; 
- console.log('test1'); //test
+  var primeArray = []; 
   while (testNum <= 100) 
   {
     x = 1;
@@ -27,13 +28,20 @@ function primeTest(){
         }
     }
       x++; 
-   console.log('tested ' + testNum + ' is ' + prime + '\n'); //test
     if (prime == true) 
-    {
-     console.log('test2'); //test
+    { 
       document.write(testNum + "\n"); 
+      primeArray[numOfPrimes] = testNum; 
+      numOfPrimes++; 
     }
    testNum++; 
+  }
+ 
+  document.write('There are ' + numOfPrimes + 'prime numbers between 0 and 100'); 
+  
+  for (var x = 0; x <= numOfPrimes; x++) 
+  {
+    document.write(primeArray[x] + '\n'); 
   }
 }
 </script>
