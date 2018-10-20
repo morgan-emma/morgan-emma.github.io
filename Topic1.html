@@ -6,7 +6,7 @@
 <body>
 
 <h1>Loops</h1>
-<p>Display all prime numbers from 1 to 100</p>
+<p>Count all prime numbers from 1 to 100</p>
 <p>
 <script>
 primeTest(); 
@@ -30,14 +30,13 @@ function primeTest(){
       x++; 
     if (prime == true) 
     { 
-      document.write(testNum + "\n"); 
       primeArray[numOfPrimes] = testNum; 
       numOfPrimes++; 
     }
    testNum++; 
   }
  
-  document.write('\r\nThere are ' + primeArray.length + ' prime numbers between 0 and 100\r\n'); 
+  document.write('There are ' + primeArray.length + ' prime numbers between 0 and 100: \n'); 
   
   for (var x = 0; x < numOfPrimes; x++) 
   {
