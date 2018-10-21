@@ -1,4 +1,4 @@
-var moon = document.querySelector(".animate")
+var moon = document.querySelector(".animate");
 
 function moveMoon() {
     moon.style.animationPlayState="running";  
