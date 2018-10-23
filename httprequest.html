@@ -3,25 +3,30 @@
 <body>
     
 <p>Testing httprequest</p>
+<p>This part of the web page will not reload when you click the button
+    <br>
+    ------------------------------------------------------------------------</p>
+<button id='click' onclick="request()">Click to load</button>
 <div id="display" />
 
 <script>
-var myRequest = new XMLHttpRequest(); // create your XMLhttprequest object 
-
-myRequest.onreadystatechange = function() { // this function is called when the readystate changes 
+function request(){
+  var myRequest = new XMLHttpRequest(); // create your XMLhttprequest object 
+  var url = 'https://jsonplaceholder.typicode.com/posts'; 
+  //var url = 'https://ghibliapi.herokuapp.com/films'; 
+  myRequest.onreadystatechange = function() { // this function is called when the readystate changes 
     if (myRequest.readyState == 4) { // readystate is the current state of the request - 4 means the request is completed
-        if (myRequest.status == 200) { // status is the server response - 200 means request was successful 
-        console.log(myRequest.responseText); // text will be logged in the console 
-        document.getElementById('display').innerHTML = "Open console: Tools -> Web Developer -> Web Console"; // change web page text 
-        }
-        else { 
-        console.log('File not found'); // if we get a file not found status, we'll log a "file not found" message 
-        }
+      if (myRequest.status == 200) { // status is the server response - 200 means request was successful 
+        document.getElementById('display').innerHTML = /*this.responseText;*/JSON.parse(this.responseText); // text will be posted to the page 
+      }
+      else { 
+        document.write('File not found'); // if we get a file not found status, we'll get a "file not found" message 
+      }
     }
-};
-myRequest.open("GET", 'request.txt', true); // open request - "get" means we receive data, url of file, true means asynchronous request will run immediately
-myRequest.send(); // send request 
-
+  };
+  myRequest.open("GET", url, true); // open request - "get" means we receive data, url of file, true means asynchronous request will run immediately
+  myRequest.send(); // send request 
+}
 </script>
 
 </body> 
