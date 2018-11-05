@@ -4,7 +4,7 @@
 	<title>CSS manipulation with Java</title>
 </head>
 <body>
-	<div id="myText">Very important information</div>
+	<div id="myText">This text is very important</div>
     <br>
     What is your favorite color? 
     <select id="font" onchange="fontColor();">
@@ -15,6 +15,17 @@
         <option value="4">Green</option>
         <option value="5">Blue</option>
         <option value="6">Purple</option>
+    </select>
+    <br>
+    Choose a size!  
+    <select id="size" onchange="fontSize();">
+        <option value="0" selected>-Select-</option>
+        <option value="1">Extra Small</option>
+        <option value="2">Small</option>
+        <option value="3">Medium</option>
+        <option value="4">Large</option>
+        <option value="5">Extra Large</option>
+        <option value="6">MONSTROUS</option>
     </select>
     <script type="text/javascript" src="topic7.js"></script>
 </body>
