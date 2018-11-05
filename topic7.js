@@ -30,5 +30,40 @@ function fontColor() {
             break;             
             }
     
-    document.getElementById('myText').style.color =  color ;
+    document.getElementById('myText').style.color =  color;
+}
+
+function fontSize() {
+	var myFontSelect = "document.getElementById('font');"
+
+	var size = '12pt'; 
+    var selected = document.getElementById('size').value;
+    switch (selected) {
+        case '0': 
+            size = '12pt'; 
+            break; 
+        case '1': 
+            size = '6pt'; 
+            break; 
+        case '2': 
+            size = '12pt'; 
+            break; 
+        case '3': 
+            size = '25pt';
+            break; 
+        case '4': 
+            size = '40pt'; 
+            break; 
+        case '5': 
+            size = '50pt'; 
+            break; 
+        case '6': 
+            size = '90pt'; 
+            break; 
+        default: 
+            size = '12pt'; 
+            break;             
+            }
+    
+    document.getElementById('myText').style.fontSize =  size;
 }
