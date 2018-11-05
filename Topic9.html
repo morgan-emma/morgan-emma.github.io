@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	   <title>Javascript Events</title>
+    </head>
+    <body onload="loadIt()">
+        <select id="select" onchange="changeIt()">
+            <option value="0" selected>Change it!</option>
+            <option value="1">Bop it!</option>
+            <option value="2">Twist it!</option>
+            <option value="3">Pull it!</option>
+        </select>
+        <br>
+        <br>
+        <div id="selectResult" style="outline: thick solid #000000; width: 200px"> You haven't changed it! </div>
+        <br>
+        <button onclick="clickIt()">Click it!</button>
+        <p id="overAndOut" onmouseover="mouseOverIt()" onmouseout="mouseOutIt()">Mouse over it!</p>
+        Type it! <input id="keyDown" type="text" onkeydown="hitIt()"> 
+        <br>
+        <br>
+        <div id="type"></div>
+        For Mobile: 
+        <p id="touch" ontouchstart="touchIt()" ontouchend="stopTouchingIt()">Touch it!</p>
+        <script src="topic9.js"></script>
+    </body>
+</html>
