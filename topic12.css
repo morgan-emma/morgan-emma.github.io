@@ -1,0 +1,38 @@
+div { 
+    height: 75px; 
+    width: 75px; 
+    margin: 50px; 
+}
+
+#test1:hover {
+    font-size: 50px; 
+    color: blue; 
+    font-weight: bold; 
+} 
+
+#test2:hover {
+    font-size: 30px; 
+    color: blueviolet; 
+    font-weight: bold; 
+    transform: translate(30px, 30px);
+} 
+
+#test3:hover {
+    color: cornflowerblue; 
+    font-weight: bold; 
+    transform: rotate(180deg);
+} 
+
+#test4:hover {
+    font-size: 50px; 
+    color: darkslateblue; 
+    font-weight: bold; 
+    transform: skewX(45deg);
+} 
+
+#test5:hover {
+    font-size: 50px; 
+    color: cyan; 
+    font-weight: bold; 
+    transform: matrix(1, 1, 0, 1, 0, 0);
+} 
