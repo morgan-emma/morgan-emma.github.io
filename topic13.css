@@ -1,0 +1,75 @@
+div { 
+    height: 75px; 
+    width: 75px; 
+    margin: 50px; 
+}
+
+#test1 {
+    background-color: cadetblue;
+    width:100px;
+    height: 100px;
+    animation: testOne 5s infinite;
+} 
+
+@keyframes testOne{
+    100% {transform: rotate(360deg);}
+}
+
+#test2 {
+    background-color: skyblue;
+    width:100px;
+    height: 100px;
+    animation: testTwo 10s linear infinite;
+} 
+
+@keyframes testTwo{
+    25% {background-color: aqua;}
+    50% {background-color: darkblue;}
+    75% {background-color: darkcyan;}
+    100% {background-color: cyan;}
+}
+
+#test3 {
+    background-color: darkturquoise ;
+    width:100px;
+    height: 100px;
+    animation: testThree 5s linear infinite;
+} 
+
+
+@keyframes testThree{
+    50% { border-radius: 50% 50% 50% 50%; }
+    100% { width: 100px; height: 100px; }
+}
+
+#test4 {
+    background-color: cornflowerblue;
+    width:10px;
+    height: 10px;
+    animation: testFour 10s linear infinite;
+} 
+
+@keyframes testFour{
+    50% { width: 100px; height: 100px; }
+    100% { width: 10px; height: 10px; }
+}
+
+#test5 {
+    background-color: fuchsia;
+    width: 20px;
+    height: 20px;
+    animation: testFive 10s infinite;
+} 
+
+@keyframes testFive{
+    25% {background-color: blueviolet;}
+    50% {background-color: darkviolet; 
+        border-radius: 50% 50% 50% 50%;  
+        width: 100px; 
+        height: 100px; }
+    75% {background-color: purple;}
+    100% {background-color: fuchsia; 
+        width: 100px; 
+        height: 100px; 
+        transform: rotate(360deg);}  
+}
